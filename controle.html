@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Controle do Rastreamento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+</head>
+<body>
+    <div class="controle-container">
+        <h2>Controle do Rastreamento</h2>
+        <button id="startButton" type="button">Iniciar Câmera</button>
+        <video id="inputVideo"></video>
+        <canvas id="outputCanvas"></canvas>
+    </div>
+    <script src="js/controle.js"></script>
+</body>
+</html>

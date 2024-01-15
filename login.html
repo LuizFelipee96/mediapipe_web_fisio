@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Sistema de Análise de Quedas</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Logo da Clínica" id="login-logo">
+        </div>
+        <form id="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+    <script>
+       
+        var firebaseConfig = {
+            apiKey: "AIzaSyBVtvoYr60CB1ubknd5gDt50z2Gcf6Ml9U",
+            authDomain: "quedaobv.firebaseapp.com",
+            projectId: "quedaobv",
+            storageBucket: "quedaobv.appspot.com",
+            messagingSenderId: "724413345236",
+            appId: "1:724413345236:web:4567eb13b0c3f43b463a41",
+            measurementId: "G-WCLK56TPBS"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

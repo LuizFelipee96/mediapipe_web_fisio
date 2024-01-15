@@ -1,0 +1,70 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.controle-container {
+    text-align: center;
+    position: relative;
+    padding-top: 60px; /* Ajuste conforme necessário */
+}
+
+/* Estilo para a barra superior */
+.top-bar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10; /* Assegure-se que a barra superior sobreponha o canvas */
+}
+
+/* Estilo para as barras laterais */
+.side-bar {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 60px; /* Ajuste a largura conforme necessário */
+    z-index: 10; /* Assegure-se que as barras laterais sobreponham o canvas */
+}
+
+.side-bar.left {
+    left: 0;
+}
+
+.side-bar.right {
+    right: 0;
+}
+
+/* Estilo para o botão */
+#startButton {
+    z-index: 1000; 
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#startButton:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para o vídeo e canvas */
+#inputVideo, #outputCanvas {
+    position: fixed; /* Fixa o vídeo e o canvas na tela */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% da largura da janela de visualização */
+    height: 100vh; /* 100% da altura da janela de visualização */
+    object-fit: cover; /* Assegura que o vídeo e o canvas cubram todo o espaço disponível */
+}
